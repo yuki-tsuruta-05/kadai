@@ -1,0 +1,157 @@
+/*タブレット１*/
+@media screen and (max-width: 1080px){
+  header {
+    background-color: #fff;
+    position: fixed !important;
+    z-index: 3;
+  }
+  
+  .HeaderNavHamburger{
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 21px;
+    z-index: 10;
+  }  
+  
+  .HeaderNavHamburger__line {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transform: translate(0,-50%);
+    border-radius: 10px;
+    transition: top .2s,transform .2s,opacity .3s;
+  }
+  
+  .HeaderNavHamburger__line:first-child {
+    top: 0;
+  }
+
+  .HeaderNavHamburger__line:last-child {
+    top: 100%;
+  }
+  
+  .menu-list{
+    display: none;
+  }
+  
+  .firstview {
+    padding-top: 160px
+  }
+  
+  
+}
+
+
+/*タブレット２*/
+@media screen and (max-width: 1024px){
+  .inner{
+    flex-direction: column;
+  }
+  
+  .video {
+    margin-bottom: 16px;
+    width: 75%;
+  }
+  
+  .explanation {
+    margin-left: 0;
+    width: 75%;
+  }
+  
+}
+
+/*スマホ*/
+@media screen and (max-width: 769px){
+  header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .firstview{
+    background-image: none;
+    padding-top: 0;
+    padding-bottom: 35px;
+  }
+  
+  .firstview-main-img{
+    display: block;
+  }
+  
+  .firstview-container{
+    margin-top: -45vw;
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .firstview-content{
+    width: 100%;
+    margin-bottom: 20px
+  }
+  
+  .firstview-container h2{
+  font-size: 25px;
+  line-height: 36px;
+  margin-left: calc(((100vw - 100%)/2)*-1);
+  margin-right: calc(((100vw - 100%)/2)*-1);
+  }
+
+  .images{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  
+  .imgs1 {
+    width: 27.5%;
+  }
+  
+  .imgs2 {
+    width: 40%;
+  }
+  
+  .imgs3 {
+    width: 27.5%;
+  }
+  
+  .firstview-buttons a{
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  .firstview-document{
+    display: none !important;
+  }
+  
+  .inner{
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .inner h2{
+    font-size: 30px !important;
+  }
+  
+  .video{ 
+    width: 100%;
+  }
+  
+  .explanation{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .firstview-buttons a:hover{
+  opacity: .8; 
+  transition: .2;  
+  }
+}
+
